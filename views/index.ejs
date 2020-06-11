@@ -1,0 +1,28 @@
+<%- include('./partials/header.ejs'); %>
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+    <div class="container">
+        <hr>
+        <h1> Bem-vindo ao fórum AskNode: </h1>
+        <hr>
+        <a href="/ask" class="btn btn-success">Perguntar</a>
+        <br>
+        <% asks.forEach(ask => { %>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <p><%= ask.titulo %></p>
+                </div>
+                <div class="card-footer">
+                    <a href="/ask/<%= ask.id %>">
+                        <button class="btn btn-success">Responder</button>
+                    </a>
+                    
+                </div>
+
+            </div>
+            
+        <% }) %>
+    </div>
+</body>
+<%- include('./partials/footer.ejs'); %>

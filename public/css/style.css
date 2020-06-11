@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(24, 22, 22);
+}
+h1{
+    color: aliceblue;
+}
+h2{
+    color: black;
+}
+p{
+    font-weight: bold;
+    font-size: larger;
+}
+.descricao{
+    color: white;
+}
+.resp-label{
+    color: white;
+}
